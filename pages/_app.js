@@ -1,5 +1,13 @@
 import "@/styles/globals.css";
+import '@rainbow-me/rainbowkit/styles.css';
+import { Providers } from '@/components/Provider';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <Providers>
+      <Component {...pageProps} />
+    </Providers>
+  );
 }
+
+export default MyApp; 
