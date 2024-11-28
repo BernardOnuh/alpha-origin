@@ -169,7 +169,7 @@ const MintModal = () => {
                                 </svg>
                             </button>
                             
-                            <h2 className="text-xl font-bold mb-4 text-primary">Alpha Origin Survivours</h2>
+                            <h2 className="text-xl font-bold mb-4 text-primary">Alpha Origin Survivors</h2>
                             
                             {error && (
                                 <Alert variant="destructive">{error}</Alert>

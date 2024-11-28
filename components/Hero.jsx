@@ -89,7 +89,7 @@ export default function Hero() {
   return (
     <div className=' w-[90%] mx-auto sm:pt-[96px] pt-[64px] text-center ' >
       <h2 className=' f-f-r-b font-medium  text-3xl sm:text-3xl md:text-4xl text-primary  ' >
-        Alpha Origins Surviors
+        Alpha Origins Survivors
       </h2>
 
       <Slider {...settings} className=' my-12 ' >
