@@ -4,7 +4,7 @@ import { mainnet, sepolia, baseSepolia } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 const { chains, publicClient } = configureChains(
-  [mainnet, sepolia, baseSepolia],
+  [baseSepolia],
   [publicProvider()]
 );
 
