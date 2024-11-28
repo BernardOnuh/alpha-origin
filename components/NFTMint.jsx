@@ -52,6 +52,12 @@ export default function NFTMint() {
         functionName: 'publicPrice'
     });
 
+    const { data: teamPrice } = useContractRead({
+        address: contractAddress,
+        abi: contractABI,
+        functionName: 'teamPrice'
+    });
+
     const { data: whitelistMintEnabled } = useContractRead({
         address: contractAddress,
         abi: contractABI,
@@ -76,7 +82,7 @@ export default function NFTMint() {
     });
 
     const getCurrentPrice = () => {
-        if (isTeamMember) return "0";
+        if (isTeamMember) return teamPrice || "0";
         if (isWhitelisted && whitelistMintEnabled) return whitelistPrice;
         return publicPrice;
     };
