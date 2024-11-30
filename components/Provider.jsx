@@ -1,10 +1,10 @@
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { mainnet, sepolia, baseSepolia } from 'wagmi/chains';
+import { mainnet, } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 const { chains, publicClient } = configureChains(
-  [baseSepolia],
+  [mainnet],
   [publicProvider()]
 );
 
